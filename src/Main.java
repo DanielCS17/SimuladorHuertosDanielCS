@@ -7,12 +7,11 @@ public class Main {
     public static void main(String[] args) {
         Huerto huerto = new Huerto(5);
 
-        Productor productor = new Productor("Don Bosco", 10, 5, huerto);
-        Cliente daniel = new Cliente("Daniel", 5, 5, huerto);
-        Cliente alberto = new Cliente("Alberto", 3, 5, huerto);
+        Productor productor = new Productor("Don Bosco", 5, 4, huerto);
+        Cliente daniel = new Cliente("Daniel", 5, 4, huerto);
 
+        productor.setPriority(3);
         productor.start();
         daniel.start();
-        alberto.start();
     }
 }
