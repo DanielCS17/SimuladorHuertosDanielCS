@@ -10,7 +10,7 @@ public class Main {
         Productor productor = new Productor("Don Bosco", 5, 4, huerto);
         Cliente daniel = new Cliente("Daniel", 5, 4, huerto);
 
-        productor.setPriority(3);
+        productor.setPriority(10);
         productor.start();
         daniel.start();
     }
